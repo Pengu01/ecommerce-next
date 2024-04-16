@@ -3,7 +3,6 @@
 import { ClothingItem } from '@/types';
 import React, { useState } from "react";
 import { getClothingItemByID } from '@/sanity.query';
-import Image from 'next/image';
 
 interface ClothingListProps {
     itemID: string;
@@ -16,7 +15,7 @@ const ItemPage: React.FC<ClothingListProps> = async ({ itemID }) => {
     return (
         <>
             <div className="md:w-1/2">
-                <Image src={item.image} alt={item.name} className="w-full h-auto" />
+                <img src={item.image} alt={item.name} className="w-full h-auto" />
             </div>
             <div className="md:w-1/2 p-4">
                 <h1 className="text-3xl font-bold mb-2 text-[--rmain-color]">{item.name}</h1>

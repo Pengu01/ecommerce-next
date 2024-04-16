@@ -1,7 +1,6 @@
 import React from 'react';
 import { ClothingItem } from '@/types';
 import Link from 'next/link';
-import Image from 'next/image';
 
 interface ClothingListProps {
   items: ClothingItem[];
@@ -13,7 +12,7 @@ const ClothingList: React.FC<ClothingListProps> = ({ items }) => {
       {items.map((item) => (
         <Link href={`product/${item.id}`} key={item.id}>
         <div key={item.id} className="bg-white shadow-md overflow-hidden w-52 h-52 group hover:cursor-pointer">
-          <Image src={item.image} alt={item.name} className="w-full h-full object-cover"/>
+          <img src={item.image} alt={item.name} className="w-full h-full object-cover"/>
           <div className="w-52 h-52 bottom-0 hover:bottom-52 bg-[--rmain-color] z-10 relative transition-all duration-500 ease">
           <p className="text-[--main-color]  m-auto relative bottom-[40px] p-1 text-center bg-[--rmain-color] text-2xl">{item.name}</p>
           <p className='text-2xl text-[--main-color] text-center'>Colors</p>
