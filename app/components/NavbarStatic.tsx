@@ -1,8 +1,10 @@
 import Link from "next/link";
+
 interface Open {
     women: boolean;
     men: boolean;
   }
+
 const NavbarStatic: React.FC<Open> = ({ women, men })  => {
     return (
         <>  
