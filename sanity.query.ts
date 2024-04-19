@@ -59,7 +59,7 @@ export async function getMaleClothingItems(){
       "category": category,
       "sizes": sizes,
       "colors": colors
-    }`, { cache: 'no-cache' }
+    }`
   );
   console.log(data);
   return data;
