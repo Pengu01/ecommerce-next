@@ -14,7 +14,7 @@ const Content = () => {
                 <p className="text-4xl">Reinventing fashion.</p>
                 <p>We have quality clothes made by quality people
                     and we believe in the power of individual.
-                    We don't follow trends,
+                    We do not follow trends,
                     we create them. Our mission is to make  
                     a difference through our designs that 
                     are not only stylish but also sustainable  
