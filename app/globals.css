@@ -17,3 +17,31 @@ body{
   background-color: var(--main-color);
   padding: 0;
 }
+.categoryanim{
+animation: categorya ease-in-out 1s;
+}
+.backgroundanim{
+animation: backgrounda 2s ease-in-out;
+}
+@keyframes categorya {
+  0% {
+    top: calc(50vh - 34px);
+  }
+  100%{
+    top: 0px;
+  }
+}
+@keyframes backgrounda {
+  0%{
+    width: 313.17px;
+    background-size: 100% 0%;
+  }
+  50%{
+    width: 313.17px;
+    background-size: 100% 0%;
+  }
+  100%{
+    background-size: 100% 100%;
+    width: 100%;
+  }
+}
